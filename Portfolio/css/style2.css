@@ -1,0 +1,158 @@
+@import url(Components/container.css);
+@import url(Components/card.css);
+@import url(Components/buttons.css);
+@import url(Components/navbar.css);
+
+*{padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    list-style: none;
+    text-decoration: none;
+    scroll-behavior: smooth;
+    }
+    :root{
+        --bg-color: #ffffff;
+        --text-color: #000;
+        --second-color: #000000;
+        --main-color: #554239;
+        --text-color2: #ffffff;
+        --big-font: 5rem;
+        --h2-font: 3rem;
+        --p-font: 1.1rem;
+    }
+    body{
+        background: var(--bg-color);
+        color: var(--text-color);
+    }
+   
+    header{
+        position: fixed;
+        width: 100%;
+        top: 0;
+        right: 0;
+        z-index: 1000;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        transition: .3s;
+        background: var(--bg-color);
+        padding: 13px 18%;
+        box-shadow: 2px 2px 2px rgb(245, 245, 245);
+    }
+
+
+    .logo img{
+        max-width: 100%;
+        width: 60px;
+        height: auto;
+    }
+
+
+    .Title1{
+        background: #c3c1bf;
+        width: 100%;
+        padding: 100px 0px;
+    }
+    .Title2 h2{
+        color: white;
+        font-size: 75px;
+        width: 1130px;
+        margin: 30px auto;
+        text-align: center;
+        }
+        .box{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 400px;
+        }
+
+
+@media (max-width: 970px){
+    #menu-icon{
+        display: block;
+    }
+    .home{
+        min-height: 80vh;
+    }
+    .navlist{
+        position: absolute;
+        top: -600px;
+        left: 0;
+        right: 0;
+        flex-direction: column;
+        background: var(--main-color);
+        text-align: right;
+        transition: all .40s;
+    }
+    .navlist a{
+        display: block;
+        padding: 1.2rem;
+        margin: 1.5rem;
+        border-right: 2px solid var(--bg-color);
+        color: var(--bg-color);
+    }
+    .navlist a:hover{
+        background: var(--bg-color);
+        color: var(--main-color);
+    }
+    .navlist a::after{
+        display: none;
+    }
+    .navlist.active{
+        top: 100%;
+    }
+}
+
+@media (max-width: 1500px) {
+    .box{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding: 60px 25px;
+ }
+
+ .avantage{
+grid-template-columns: 1fr;
+        text-align: center;
+        margin-top: 80px;
+ 
+}
+
+}
+
+@media (max-width: 950px) {
+    .about{
+        grid-template-columns: 1fr;
+        text-align: center;
+        margin-top: 80px;
+    }
+    .about-text p{
+        width: 100%;
+    }
+    .about img{
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+    .main img{
+        order: 2;
+    }
+}
+
+.logo{
+    background-color: transparent;
+    animation: changing-color 2s;
+    
+   }
+   @keyframes changing-color {
+    0% {
+    background-color: rgb(255, 255, 255);
+    }
+    50% {
+    background-color: rgb(234, 199, 235);
+    }
+    100% {
+    background-color: rgb(255, 255, 255);
+    }
+   }

@@ -1,0 +1,42 @@
+.container{
+        width: 100%;
+        padding: 78px 0px;
+        margin-top: 40px;
+        
+       }
+       .container img{
+        height: auto;
+        width: 320px;
+       }
+       .container-text{
+        width: 550px;
+       }
+       .main{
+        width: 1130px;
+        max-width: 95%;
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+       }
+       .container-text h1{
+        color: rgb(0, 0, 0);
+        font-size: 60px;
+        text-transform: capitalize;
+        margin-bottom: 20px;
+       }
+       .container-text h5{
+        color: rgb(0, 0, 0);
+        font-size: 25px;
+        text-transform: capitalize;
+        margin-bottom: 25px;
+        letter-spacing: 2px;
+       }
+       .container-text p{
+        color: #000;
+        letter-spacing: 1px;
+        line-height: 28px;
+        font-size: 18px;
+        margin-bottom: 45px;
+       }
+       
